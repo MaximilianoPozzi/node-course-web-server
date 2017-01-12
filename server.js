@@ -46,7 +46,6 @@ app.get('/', (req, res) => {
    //  })
     res.render('home.hbs', {
         pageTitle: 'Home Page',
-        currentYear: new Date().getFullYear(),
         welcomeMessage: 'Welcome to our website!'
 })
 });
@@ -54,14 +53,12 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About page',
-        currentYear: new Date().getFullYear()
     });
 });
 
 app.get('/projects', (req, res) => {
     res.render('projects.hbs', {
         pageTitle: 'Project page',
-        currentYear: new Date().getFullYear()
     });
 });
 
